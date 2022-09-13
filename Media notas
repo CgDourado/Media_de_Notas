@@ -1,0 +1,25 @@
+using static System.Console;
+
+int media, nt1, nt2, nt3, nt4;
+string nome;
+
+WriteLine("Qual o Seu nome?: ");
+nome = (string)ReadLine();
+WriteLine("Digite a Primeira Nota: ");
+nt1 = Convert.ToInt32(ReadLine());
+WriteLine("Digite a Segunda Nota: ");
+nt2 = Convert.ToInt32(ReadLine());
+WriteLine("Digite a Terceirar Nota: ");
+nt3 = Convert.ToInt32(ReadLine());
+WriteLine("Digite a Quarta Nota: ");
+nt4 = Convert.ToInt32(ReadLine());
+media = (nt1 + nt2 + nt3 + nt4) / 4;
+if (media >= 60)
+{
+    WriteLine($"Sua Média foi de, {media}, Você passou, Parabéns {nome}!");
+}
+else
+{
+    WriteLine($"Sua Média foi de, {media}, e infelizmente Você Reprovou {nome}, Volte ano que vem!");
+}
+ReadLine();
